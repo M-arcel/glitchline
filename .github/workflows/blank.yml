@@ -28,6 +28,8 @@ jobs:
         run: |
           echo Pushing to Glitch
           git status
+          git config user.email "marcel.regeci@gmail.com"
+          git config user.name "Marcel Regeci"
           git add .
           git commit -m "CI pipeline push"
           git push https://014bc4cf-9aed-49df-a66c-5ddd61e1369d@api.glitch.com/git/testglitchline
